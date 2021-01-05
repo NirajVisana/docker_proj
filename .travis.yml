@@ -12,8 +12,8 @@ deploy:
   - echo $AWS_SECRET_ACCESS_KEY
   - echo $AWS_ACCESS_KEY_ID
   provider: elasticbeanstalk
-  access_key_id: "$ACCESS_KEY_ID"
-  secret_access_key: "$SECRET_ACCESS_KEY"
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
   region: "ap-south-1"
   app: "myReactAppDocker"
   env: "Myreactappdocker-env" 
